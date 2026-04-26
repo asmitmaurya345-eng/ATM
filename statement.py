@@ -11,5 +11,6 @@ class Account_History():
                 for x,y in self.statement.items():
                     print("Date",x,"Amount",y)
                 self.c=input("press enter to exit :)")
+                return
             else:
                 print("Please enter correct account number!")

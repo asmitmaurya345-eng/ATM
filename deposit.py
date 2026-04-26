@@ -10,7 +10,7 @@ class Deposit():
                     self.per_info=self.data[self.Acc_no]
                     while True:
                         try:
-                            self.pin=int(input("Enter your pin"))
+                            self.pin=int(input("Enter your pin:"))
                             if self.pin==self.per_info["pin"]:
                                 print("pin accepted")
                                 while True:

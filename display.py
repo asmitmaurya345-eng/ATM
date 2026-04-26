@@ -8,8 +8,8 @@ class Account():
             self.acc_no=input("Enter your account number:")
             if self.acc_no in self.data:
                 per_info=self.data[self.acc_no]
-                print("Acount number;",self.acc_no)
-                print("Acount Holder Name;",per_info["name"])
+                print("Acount number:",self.acc_no)
+                print("Acount Holder Name:",per_info["name"])
                 print("Balance:",per_info["balance"])
                 break
             else:

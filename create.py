@@ -13,7 +13,7 @@ class Creat_Account():
         self.name=input("enter your name:")
         self.pin=int(input("create yout pin:"))
         while True:
-            self.money=input("Enter amount you want to deposit:")
+            self.money=int(input("Enter amount you want to deposit:"))
             if int(self.money)<=0 and self.money.isdigit():
                 print("Please enter valid amount! (only integer)")
             else:
