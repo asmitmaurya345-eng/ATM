@@ -5,22 +5,26 @@ class Deposit():
         self.Acc_no=input("Enter your accouunt number:")
         with open ("database.json","r") as database
         self.data=json.load(database)
-        if self.Acc_no in self.data:
-            self.per_info=self.data[self.Acc_no]
-            while True:
-                try:
-                    self.money=int(input("Enter amount you want to deposit:"))
-                    break
-                except ValueError:
-                    print("Enter valid amount!")
-            self.per_info["balance"]+=self.money
-            self.history=self.per_info["history"]
-            self.today=str(datetime.now())[:10]
-            if self.today in self.history:
-                self.history[self.today]+=self.money
+        while True:
+            if self.Acc_no in self.data:
+                self.per_info=self.data[self.Acc_no]
+                while True:
+                    try:
+                        self.money=int(input("Enter amount you want to deposit:"))
+                        break
+                    except ValueError:
+                        print("Enter valid amount!")
+                self.per_info["balance"]+=self.money
+                self.history=self.per_info["history"]
+                self.today=str(datetime.now())[:10]
+                if self.today in self.history:
+                    self.history[self.today]+=self.money
+                else:
+                    self.history[self.today]=self.money
+                database.close()
+                break
             else:
-                self.history[self.today]=self.money
-            database.close()
+                print("Enter correct account number!")
         with open ("database.json","w") as database
         json.dump(self.data,database)
         database.close()
