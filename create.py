@@ -1,7 +1,7 @@
 import json
 import random
 from datetime import datetime 
-class Account():
+class Creat_Account():
     def __init__(self):
         self.acc_no=str(random.randrange(123456,999999))
         self.name=input("enter your name:")
@@ -18,4 +18,3 @@ class Account():
         database.dump({self.full_info})
         print("Your account have been created sucessfully>")
         database.close()
-        
