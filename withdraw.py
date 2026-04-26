@@ -17,6 +17,11 @@ class Withdraw():
                                     try:
                                         print("you have",self.per_info["balance"],"in your account.")
                                         self.money=int(input("Enter amount you want to withdraw:"))
+                                        if self.money>0:
+                                            pass
+                                        else:
+                                            print("Please enter a positive amount!")
+                                            continue
                                     except ValueError:
                                         print("Enter valid amount! (integer only)")
                                         continue
