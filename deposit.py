@@ -27,7 +27,7 @@ class Deposit():
                                         else:
                                             self.history[self.today]=self.money
                                         with open ("database.json","w") as database:
-                                            json.dump(self.data,database)
+                                            json.dump(self.data,database,indent=4)
                                             print(f"Amount of ₹{self.money} has been successfully deposited.")
                                             return
                                     except ValueError:
