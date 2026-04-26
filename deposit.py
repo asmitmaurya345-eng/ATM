@@ -29,6 +29,7 @@ class Deposit():
                                         with open ("database.json","w") as database:
                                             json.dump(self.data,database,indent=4)
                                             print(f"Amount of ₹{self.money} has been successfully deposited.")
+                                            self.c=input("press enter to exit :)")
                                             return
                                     except ValueError:
                                         print("Enter valid amount! (integer only)")

@@ -14,4 +14,4 @@ class Account():
                 break
             else:
                 print("Enter correct account number!")
-        self.c=input("press enter to continew")
+        self.c=input("press enter to exit :)")

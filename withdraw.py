@@ -31,6 +31,7 @@ class Withdraw():
                                         with open ("database.json","w") as database:
                                             json.dump(self.data,database,indent=4)
                                             print(f"Amount of ₹{self.money} has been withdrawed.")
+                                            self.c=input("press enter to exit :)")
                                             return
                                     else:
                                         print("Insufficient funds!")

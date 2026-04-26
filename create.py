@@ -25,4 +25,4 @@ class Creat_Account():
             json.dump(self.data,database,indent=4)
             print("Your account have been created sucessfully :)")
             print("Your account number is:",self.acc_no)
-            database.close()
+            self.c=input("press enter to exit :)")

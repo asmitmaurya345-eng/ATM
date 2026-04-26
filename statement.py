@@ -10,6 +10,6 @@ class Account_History():
                 self.statement=self.per_info["history"]
                 for x,y in self.statement.items():
                     print("Date",x,"Amount",y)
-                break
+                self.c=input("press enter to exit :)")
             else:
                 print("Please enter correct account number!")

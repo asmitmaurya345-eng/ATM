@@ -1,1 +1,18 @@
-{"123456": {"name": "Asmit Maurya", "pin": 1234, "balance": 1350, "history": {"2026-04-26": 1350}}, "421137": {"name": "Naman Kumar", "pin": 1979, "balance": "2000", "history": {"2026-04-26": "2000"}}}
+{
+    "123456": {
+        "name": "Asmit Maurya",
+        "pin": 1234,
+        "balance": 1230,
+        "history": {
+            "2026-04-26": 1230
+        }
+    },
+    "421137": {
+        "name": "Naman Kumar",
+        "pin": 1979,
+        "balance": "2000",
+        "history": {
+            "2026-04-26": "2000"
+        }
+    }
+}
