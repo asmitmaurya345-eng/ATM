@@ -7,5 +7,5 @@ class Account():
             per_info=data[acc_no]
             print("Acount number;",self.acc_no)
             print("Acount Holder Name;",per_info["name"])
-            print("Balance:",per_info[balance])
+            print("Balance:",per_info["balance"])
             database.close()
