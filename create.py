@@ -19,9 +19,11 @@ class Creat_Account():
             else:
                 break   
         today_date=str(datetime.now())[:10]
-        self.full_info={self.acc_no:{"name":self.name,"pin":self.pin,"history":{today_date:self.money}}}
+        self.full_info={"name":self.name,"pin":self.pin,"balance":self.money,"history":{today_date:self.money}}
         self.data[self.acc_no]=self.full_info
         with open ("database.json","w") as database:
-            json.dump({self.full_info,database})
-            print("Your account have been created sucessfully>")
+            json.dump(self.data,database)
+            print("Your account have been created sucessfully :)")
+            print("Your account number is:",self.acc_no)
             database.close()
+            
