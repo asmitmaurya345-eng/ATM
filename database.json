@@ -2,33 +2,9 @@
     "123456": {
         "name": "Asmit Maurya",
         "pin": 1234,
-        "balance": 1900,
+        "balance": 1000,
         "history": {
-            "2026-04-26": 1900
-        }
-    },
-    "643051": {
-        "name": "Naman Kumar",
-        "pin": 1979,
-        "balance": 0,
-        "history": {
-            "2026-04-26": 0
-        }
-    },
-    "175246": {
-        "name": "yashaswi raj",
-        "pin": 842001,
-        "balance":-98769,
-        "history": {
-            "2026-04-26": -123000
-        }
-    },
-    "910861": {
-        "name": "Harshit Kumar",
-        "pin": 7056,
-        "balance": 5000,
-        "history": {
-            "2026-04-26": 5000
+            "2026-04-26": 1000
         }
     }
 }
