@@ -26,3 +26,4 @@ class Creat_Account():
             print("Your account have been created sucessfully :)")
             print("Your account number is:",self.acc_no)
             self.c=input("press enter to exit :)")
+            
