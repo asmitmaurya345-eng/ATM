@@ -4,3 +4,4 @@ with open ("database.json","w") as database:
         json.dump(full_info,database,indent=4)
         print("Your account have been created sucessfully>")
         database.close()
+        
